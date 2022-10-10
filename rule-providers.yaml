@@ -1,0 +1,108 @@
+rule-providers:
+# 内容：可以自行添加其它自己想要在线规则列表
+  Amazon: # 直连列表 中国常用域名 修复误拦截
+    behavior: classical # domain, ipcidr or classical (premium core only)
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/Amazon.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Amazon.yaml
+  BanEasyList: #广告规则  EasyList列表，只包含ABP中的 EasyList 内容
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/BanEasyList.yaml"
+    interval: 86400
+    path: ./ACL4SSR/BanEasyList.yaml
+  BanAD:   #广告规则 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/BanAD.yaml"
+    interval: 86400
+    path: ./ACL4SSR/BanAD.yaml
+  BanProgramAD: #广告规则 包含常用应用的各种去广告规则 可能有轻微副作用，可放心使用
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/BanProgramAD.yaml"
+    interval: 86400
+    path: ./ACL4SSR/BanProgramAD.yaml
+  BanEasyListChina: #广告规则 EasyListChina列表，只包含ABP中的 EasyListChina 内容
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/BanEasyListChina.yaml"
+    interval: 86400
+    path: ./ACL4SSR/BanEasyListChina.yaml
+  ChinaCompanyIp:  # 直连列表 中国云服务商ip端
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/ChinaCompanyIp.yaml"
+    interval: 86400
+    path: ./ACL4SSR/ChinaCompanyIp.yaml
+  ChinaIp: # 直连列表 AmazonIp、banAD、china_ip_list、DiscoveryPlus、KKTV、NetEaseMusic、Scholar 
+    behavior: ipcidr  
+    type: http
+    url: "github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/ChinaIp.yaml"
+    interval: 86400
+    path: ./ACL4SSR/SteamCN.yaml
+  ChinaMedia:  # 直连列表 中国媒体 bilibili 爱奇异 腾讯 乐事
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/ChinaMedia.yaml"
+    interval: 86400
+    path: ./ACL4SSR/ChinaMedia.yaml
+  Download:  # 直连列表 下载软件
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/Download.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Download.yaml
+  LocalAreaNetwork: # 直连列表 本地/局域网地址
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/LocalAreaNetwork.yaml"
+    interval: 86400
+    path: ./ACL4SSR/LocalAreaNetwork.yaml
+  UnBan:   # 直连列表 白名单 不应该被广告链接的网站
+    behavior: classical 
+    type: http
+    url: "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/UnBan.yaml"
+    interval: 86400
+    path: ./ACL4SSR/UnBan.yaml
+  Proxyall: # 国外代理   本部分包含国外媒体，国外应用，其他必须代理列表
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/Proxyall.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Proxyall.yaml
+  Amazon: # 国外代理 亚马逊
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/Amazon.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Amazon.yaml
+  Netflix: # 国外代理 奶飞
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/Netflix.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Netflix.yaml
+  Telegram: # 国外代理 电报
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/Telegram.yaml"
+    interval: 86400
+    path: ./ACL4SSR/Telegram.yaml
+	    path: ./ACL4SSR/Netflix.yaml
+  TikTok: # 国外代理 抖音
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/TikTok.yaml"
+    interval: 86400
+    path: ./ACL4SSR/TikTok.yaml
+  YouTube: # 国外代理 油管
+    behavior: classical 
+    type: http
+    url: "https://github.com/bubuyika/clashrule/blob/main/YouTube.yaml"
+    interval: 86400
+    path: ./ACL4SSR/YouTube.yaml
+
+
+
