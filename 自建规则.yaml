@@ -1,0 +1,470 @@
+---
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: rule
+log-level: silent
+external-controller: 0.0.0.0:9090
+secret: '123456'
+proxies:
+- name: "\U0001F1FA\U0001F1F3 TC01"
+  type: ss
+  server: 65.49.150.48
+  port: 18509
+  cipher: aes-256-gcm
+  password: tPDzFnzfhNPPPHuS
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 TC02"
+  type: ss
+  server: 65.49.151.90
+  port: 18509
+  cipher: aes-256-gcm
+  password: tPDzFnzfhNPPPHuS
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 TC03"
+  type: vmess
+  server: 65.49.151.171
+  port: 18509
+  uuid: 607397b9-943d-4615-8103-f9c2e83de99e
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: false
+  tls: false
+- name: "\U0001F1FA\U0001F1F3 TC04"
+  type: vmess
+  server: 65.49.150.109
+  port: 18509
+  uuid: 607397b9-943d-4615-8103-f9c2e83de99e
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: false
+  tls: false
+- name: "\U0001F1FA\U0001F1F3 TC05"
+  type: vmess
+  server: 65.49.150.86
+  port: 18509
+  uuid: 607397b9-943d-4615-8103-f9c2e83de99e
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: false
+  tls: false
+- name: "\U0001F1FA\U0001F1F3 TC06"
+  type: vmess
+  server: 23.83.225.46
+  port: 18509
+  uuid: 607397b9-943d-4615-8103-f9c2e83de99e
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: false
+  tls: false
+- name: 香港-ByWave-01
+  type: ss
+  server: fb98ab9159f51fd0.jijifun.com
+  port: 30002
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 香港-ByWave-02
+  type: ss
+  server: c9b086079795c442.jijifun.com
+  port: 30003
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 香港-ByWave-03
+  type: ss
+  server: fb98ab9159f51fd0.jijifun.com
+  port: 30012
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 香港-ByWave-04
+  type: ss
+  server: fb98ab9159f51fd0.jijifun.com
+  port: 30013
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 台湾-HINET-01
+  type: ss
+  server: bbce2345d7772b06.jijifun.com
+  port: 30032
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 台湾-HINET-02
+  type: ss
+  server: c9b086079795c442.jijifun.com
+  port: 30033
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 新加坡-DP-01
+  type: ss
+  server: c9b086079795c442.jijifun.com
+  port: 30042
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 新加坡-DP-02
+  type: ss
+  server: bbce2345d7772b06.jijifun.com
+  port: 30043
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 日本-HALO-01
+  type: ss
+  server: bbce2345d7772b06.jijifun.com
+  port: 30052
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 日本-DP-02
+  type: ss
+  server: fb98ab9159f51fd0.jijifun.com
+  port: 30053
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 美国-HALO-02
+  type: ss
+  server: c9b086079795c442.jijifun.com
+  port: 30065
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 美国-HALO-03
+  type: ss
+  server: fb98ab9159f51fd0.jijifun.com
+  port: 30066
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+- name: 美国-HALO-04
+  type: ss
+  server: bbce2345d7772b06.jijifun.com
+  port: 30067
+  cipher: aes-256-gcm
+  password: '114514'
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 4e9072eb03.microsoft.com
+proxy-groups:
+- name: 代理
+  type: select
+  disable-udp: true
+  proxies:
+  - DIRECT
+  - REJECT
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 电报
+  type: select
+  disable-udp: true
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 油管
+  type: select
+  disable-udp: true
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 亚马逊
+  type: select
+  disable-udp: true
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 规则外路由选择
+  type: select
+  disable-udp: false
+  proxies:
+  - 代理
+  - DIRECT
+  - REJECT
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 自动
+  type: url-test
+  disable-udp: false
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+  tolerance: '150'
+- name: 奈飞
+  type: select
+  disable-udp: true
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+- name: 抖音
+  type: select
+  disable-udp: true
+  proxies:
+  - 代理
+  - "\U0001F1FA\U0001F1F3 TC01"
+  - "\U0001F1FA\U0001F1F3 TC02"
+  - "\U0001F1FA\U0001F1F3 TC03"
+  - "\U0001F1FA\U0001F1F3 TC04"
+  - "\U0001F1FA\U0001F1F3 TC05"
+  - "\U0001F1FA\U0001F1F3 TC06"
+  - 香港-ByWave-01
+  - 香港-ByWave-02
+  - 香港-ByWave-03
+  - 香港-ByWave-04
+  - 台湾-HINET-01
+  - 台湾-HINET-02
+  - 新加坡-DP-01
+  - 新加坡-DP-02
+  - 日本-HALO-01
+  - 日本-DP-02
+  - 美国-HALO-02
+  - 美国-HALO-03
+  - 美国-HALO-04
+tproxy-port: 7895
+mixed-port: 7893
+bind-address: "*"
+external-ui: "/usr/share/openclash/dashboard"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  nameserver:
+  - 202.96.64.68
+  - 202.96.69.38
+  - 114.114.114.114
+  - 119.29.29.29
+  - 119.28.28.28
+  - 223.5.5.5
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback:
+  - https://dns.cloudflare.com/dns-query
+  - tls://dns.google:853
+  - https://1.1.1.1/dns-query
+  - tls://1.1.1.1:853
+  - tls://8.8.8.8:853
+  - "[2001:4860:4860::8888]:53"
+  - "[2001:4860:4860::8844]:53"
+  - "[2001:da8::666]:53"
+  - https://public.dns.iij.jp/dns-query
+  - https://jp.tiar.app/dns-query
+  - https://jp.tiarap.org/dns-query
+  - tls://jp.tiar.app
+  - tls://dot.tiar.app
+  use-hosts: true
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+  - 202.96.64.68
+  - 202.96.69.38
+  - 114.114.114.114
+  - 119.29.29.29
+  - 119.28.28.28
+  - 223.5.5.5
+  - "[2001:4860:4860::8888]:53"
+  - "[2001:4860:4860::8844]:53"
+  - "[2001:da8::666]:53"
+tun:
+  enable: true
+  stack: system
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+profile:
+  store-selected: true
+  store-fake-ip: true
+hosts:
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- GEOIP,CN,DIRECT
+- MATCH,代理
